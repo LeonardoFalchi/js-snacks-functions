@@ -4,10 +4,22 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function filterByLetter(array, letter) {
+    //array vuoto per parole che iniziano con la lettera filtrata
+    const result = [];
+    //ciclo e controllo lettera
+    for (let i = 0; i < array.length; i++) {
+        if (array [i][0] === letter) {
+            //aggiungi parola all'array
+            result.push(array[i]);
+        }
+    }
+    //ritorna array filtrato
+    return result;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(filterByLetter(names, "A"));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
