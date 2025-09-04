@@ -16,6 +16,7 @@ function getInitials(arrayNames) {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
+const firstLetter = getInitials(names);
 console.log(getInitials(names));
 
 
