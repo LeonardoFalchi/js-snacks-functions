@@ -19,7 +19,9 @@ function filterByLetter(array, letter) {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(filterByLetter(names, "A"));
+let carattere = "L";
+const startA = filterByLetter(names, carattere);
+console.log(carattere, ":", startA);
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
