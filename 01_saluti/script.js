@@ -9,6 +9,7 @@ function saluta(nome) {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
+const messaggio = saluta(userName);
 console.log(saluta(userName));
 
 
